@@ -1,0 +1,12 @@
+beautifulsoup4
+playwright
+selenium
+chromium
+lxml
+yfinance
+pandas-datareader
+pandas
+numpy
+requests
+httpx
+schedule
