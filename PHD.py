@@ -18,6 +18,7 @@ import os
 import re
 import sys
 import argparse
+import getpass
 from pathlib import Path
 from datetime import datetime
 
@@ -279,8 +280,8 @@ def markdown_to_docx(markdown_text: str, topic: str, output_path: Path):
 
 
 def send_document_to_telegram(file_path: Path, caption: str):
-    token = required_env("TELEGRAM_BOT_TOKEN")
-    chat_id = required_env("TELEGRAM_CHAT_ID")
+    token = "8837048625:AAFaq30r4xWFAKbUif-fXSjjuAZ54N6PQeU"
+    chat_id = "1262412842"
     url = f"https://api.telegram.org/bot{token}/sendDocument"
     with file_path.open("rb") as file_obj:
         response = requests.post(
