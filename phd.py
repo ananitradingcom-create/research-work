@@ -886,7 +886,7 @@ def main():
 
     if os.environ.get("SKIP_TELEGRAM") == "1":
         return
-    token = get_secret("TELEGRAM_BOT_TOKEN")
+    token = get_secret("8837048625:AAFaq30r4xWFAKbUif-fXSjjuAZ54N6PQeU")
     chat_id = get_secret("TELEGRAM_CHAT_ID", default="1262412842")
     tg_message(token, chat_id, summary)
     tg_document(token, chat_id, out, caption="Sector-format article: UGC, Credibility, Involvement, Trust & Brand Resonance")
